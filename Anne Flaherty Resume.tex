@@ -1,0 +1,180 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% Original template pulled from http://www.davidgrant.ca/latex_resume_template on 2018-03-19
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{shading}
+\usepackage{ragged2e}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.92]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Anne K. Flaherty}  & (330)-495-1669\\
+%\ (330)-495-1669 &  \\
+anne.flaherty@case.edu & https://www.linkedin.com/in/anne-flaherty/\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{Case Western Reserve University}{Cleveland, OH}{B.S. Applied Mathematics}{Graduated: May 2016}
+	\begin{itemize}
+		\resitem{GPA: 3.2}
+		%\resitem{Coursework focused on economic analysis}
+	\end{itemize}
+
+\item
+	\ressubheading{Case Western Reserve University}{Cleveland, OH}{Full stack web developer bootcamp}{Graduated: April 2018}
+	\begin{itemize}
+		\resitem{Portfolio of work available at: https://akflaherty.github.io/portfolio/portfolio.html}
+	\end{itemize}
+
+\end{itemize}
+
+
+
+\resheading{Skills}
+
+\begin{description}
+\item
+\begin{tabular}{p{4cm}p{12cm}}
+{\bf Programming} & {Python, Java, JavaScript, SQL, Matlab, MUMPS (Cach\'e)}
+\medskip \\
+{\bf Web Development} & {HTML 5, CSS 3, MongoDB, Node.js, Angular, Express, jQuery, AJAX, JSON, XML, Firebase, Bootstrap, Handlebars, REST APIs, React, Google Analytics}
+\medskip \\
+{\bf Data Analysis} & {R, Stata, Pandas, NumPy, Mathematica, MySQL, MS SQL Server, Excel, Access, SAP Crystal Reports}
+\medskip \\
+{\bf Other Skills} & {Git, Data science, Statistical analysis, Agile project management, Scrum, Software testing, Object-oriented programming, Performance Tuning, \LaTeX}
+\end{tabular}
+\end{description}
+
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{Epic Systems}{Verona, WI}{Technical Services}{June 2016 - May 2017}
+	\begin{itemize}
+		\resitem{Provided long-term technical support of healthcare analytics software for six customers;}
+		\resitem{Worked with project managers to streamline report request processes and improve system performance;}
+		\resitem{Documented software bugs and developed design documents for software improvements;}
+		\resitem{Developed server code to search for broken system configurations;}
+		\resitem{Co-created research reporting group to assess current functionality and prioritize new development;}
+		%\resitem{Provided design review and supported roll-out of the Aggregate Data Program;}
+	\end{itemize}
+
+\pagebreak
+
+\item 
+	\ressubheading{Sigma Psi Sorority}{Cleveland, OH}{Risk Manager}{January 2016 - May 2016}
+	\begin{itemize}
+		\resitem{Regularly on call to manage crisis situations and urgent safety concerns;}
+		\resitem{Mediated conflict resolution sessions between chapter members;}
+		\resitem{Facilitated training on risk management policies and emergency resources;}
+		\resitem{Created and maintained detailed risk management plan;}
+	\end{itemize}
+
+%\item 
+	%\ressubheading{Shearer's Foods}{Massillon, OH}{Packaging Associate}{June 2014 - August 2014}
+	%\begin{itemize}
+		%\resitem{Assembled and packed boxes in a fast-paced environment and sanitized processing equipment;}
+		%\resitem{Regularly worked more than 50 hours each week to meet customer demand;}
+		%\resitem{Assisted coworkers with packing and cleanup as needed;}
+	%\end{itemize}
+
+\end{itemize}
+
+\resheading{Development Projects}
+
+\begin{itemize}
+\item
+	\ressubheading{Information-Premium}{https://information-premium.herokuapp.com/}
+	{Application Developer}{}%{https://github.com/davidmcdougs/information-premium}
+	\begin{itemize}
+		\resitem{This site is an online Q\&A resource which allows monetary incentives;}
+		\resitem{Created REST APIs using MongoDB and Mongoose ORM;}
+		\resitem{Implemented client-side and server-side data validation;}
+		\resitem{Manged team's app deployment pipeline via Heroku;}
+		\resitem{Conducted usability and unit testing;}
+	\end{itemize}
+\medskip
+
+\item
+	\ressubheading{Bet Party}{https://guarded-dusk-66600.herokuapp.com/}
+	{Backend Developer}{}%	{https://github.com/GreenCord/bets}
+	\begin{itemize}
+		\resitem{This web app allows users to login via Twitter to fun bets on upcoming events;}
+		\resitem{Administrators can create, and update existing bets;}
+		\resitem{Implemented MySQL database to hold bet data, and use Sequelize as an ORM to access data;}
+		\resitem{Created REST API to handle interface with database;}
+		\resitem{Technology used: Node.js, Express, MySQL, Sequelize, Heroku, Node Package Manager;}
+	\end{itemize}
+\medskip
+
+\item
+	\ressubheading{Film-Finder}{https://kjmbaldwin.github.io/Film-Finder/}
+	{Backend Developer}{}
+	\begin{itemize}
+		\resitem{Web app allows users to create an account to track their favorite movies, and see what movies their friends have favorited;}
+		\resitem{Setup Firebase database to manage live user data;}
+		\resitem{Used JavaScript, AJAX, and Google Maps API to dynamically search for movies and theaters near the user;}
+		%\resitem{Managed team's version control via GitHub}
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{Profressional Memberships}
+
+\begin{description}
+\item[American Mathematical Society (AMS)] \hfill 2018 - Current
+\item[Society for Industrial and Applied Mathematics (SIAM)] \hfill 2017 - Current
+\begin{itemize}
+		\resitem{Data Mining and Analytics activity group}
+		\resitem{Computational Science and Engineering activity group}
+	\end{itemize}
+
+\end{description}
+
+\end{document}
